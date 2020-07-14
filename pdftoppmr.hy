@@ -44,11 +44,11 @@
   ;; Parse
   (setv parser (argparse.ArgumentParser))
   (.add-argument parser "STRING"
-                 :help "Folder containing the PDF files")
+                 :help "folder containing the PDF files")
   (.add-argument parser "-q" :type int :default 100
-                 :help "Conversion quality")
+                 :help "conversion quality; default value: 100")
   (.add-argument parser "-r" :type int :default 300
-                 :help "Conversion resolution")
+                 :help "conversion resolution; default value: 300")
   (setv args (parser.parse_args))
   ;; Convert
   (setv pdf-jpg-tuples
