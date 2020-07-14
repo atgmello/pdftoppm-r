@@ -9,7 +9,7 @@ hy pdftoppmr.hy "/path/to/pdfs/folder" -q 100 -r 300
 
 The first argument should be a valid path, the `-q` option sets the quality of
 the conversion (defaults to 100) while `-r` sets the resolution (defaults to
-300). Use `-h` for bringing the help.
+300). Use `-h` for bringing up the help.
 
 What this script does is it recursively goes through the
 `"/path/to/pdfs/folder"` path, visiting its subfolders and for each PDF file it
@@ -22,7 +22,7 @@ Run this in a copy of the original folder to keep the PDF files.
 This script was built having the following folder structure in mind
 
 ``` sh
-root_folder
+some_folder
 ├── some_pdfs
 │   ├── foo.pdf
 │   ├── bar.pdf
@@ -40,11 +40,11 @@ root_folder
 So running the script as
 
 ``` sh
-hy pdftoppmr.hy "/path/to/root_folder"
+hy pdftoppmr.hy "/path/to/some_folder"
 ```
 
 essentially replaces all the PDF files with JPG files, essentially ending up
-with:
+with
 
 ``` sh
 root_folder
